@@ -1,0 +1,17 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="alert alert-danger" role="alert">
+  <p>Are you sure want to delete "{{item}}"?</p>
+</div>
+<form action="{% url 'delete_expense' item.id %}" method="POST">
+    {% csrf_token %}
+
+    <a href="{% url 'budget_view' %}">Cancel</a>
+
+    <input type="submit" name="Confirm">
+</form>
+
+
+{% endblock %}

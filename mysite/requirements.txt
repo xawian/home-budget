@@ -1,0 +1,9 @@
+asgiref==3.5.0
+Django==4.0.3
+django-bootstrap-form==3.4
+django-filter==21.1
+django-recaptcha==3.0.0
+pytz-deprecation-shim==0.1.0.post0
+requests==2.26.0
+sqlparse==0.4.2
+

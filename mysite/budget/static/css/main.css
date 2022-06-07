@@ -1,0 +1,87 @@
+body{
+    background-color: white;
+}
+
+#logout{
+position:absolute;
+top:0;
+right:0;
+}
+
+#budget-logo{
+    background-image: url(/images/logo.png);
+    width: 50px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#btn-expense{
+    width: 135px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+#btn-earning{
+    width: 136px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+#btn-acc{
+    width: 83px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+#logg{
+position: absolute;
+}
+
+
+.bg-dark{
+    background-color:  #703da4!important;
+}
+
+
+.section-stats h1{
+    font-size: 4vw;
+    margin: 15px 0px;
+}
+
+
+.card-panel{
+    background-color: white;
+    border-style: outset;
+    margin: 15px;
+}
+
+.section-expenses .expense{
+    font-size: 16px;
+    border-radius: 0;
+    margin: 0;
+}
+
+.section-expenses .expense .category{
+    font-size: 13px;
+    border-radius: 0;
+    margin: 0;
+}
+
+#lista{
+    list-style-type: none;
+}
+
+.section-stats .card-panel{
+    margin: 8px;
+}
+.section-stats h1{
+    font-size: 4vw;
+    margin: 15px 0px;
+}
+
+#myChart2{
+ clear:both;
+}
+
+
+
