@@ -99,7 +99,8 @@ def budget_view(request):
 
 @login_required(login_url='login')
 def create_expense(request):
-    expenses = Expenses.objects.all()
+    current_user = request.user.id
+    expenses = Expenses.objects.filter(user_custom_id=current_user)
     form = crud_form_expenses()
     filter = order_filter(request.GET, queryset=expenses)
     expenses = filter.qs
@@ -115,7 +116,8 @@ def create_expense(request):
 @login_required(login_url='login')
 def create_earning(request):
     form = crud_form_earnings()
-    earnings = Earnings.objects.all()
+    current_user = request.user.id
+    earnings = Earnings.objects.filter(user_custom_id=current_user)
     filter = order_filter_earnings(request.GET, queryset=earnings)
     earnings = filter.qs
     if request.method == 'POST':
